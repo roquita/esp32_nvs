@@ -1,0 +1,12 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.portWin": "COM18",
+  "files.associations": {
+    "esp_spi_flash.h": "c",
+    "array": "c",
+    "string_view": "c",
+    "initializer_list": "c",
+    "utility": "c",
+    "*.inc": "c"
+  }
+}
