@@ -1,4 +1,4 @@
 key,type,encoding,value
 main,namespace,,main
-ssid,data,string,missid
-pass,data,string,mipass
+ssid,data,string,missidx2
+pass,data,string,mipassx2

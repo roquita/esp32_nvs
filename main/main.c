@@ -44,7 +44,8 @@ esp_err_t nvs_get_string(char *str, char *namespace, char *key)
     }
 
     size_t size = 0;
-    err = nvs_get_blob(handle, key, NULL, &size);
+    err = nvs_get_str(handle, key, NULL, &size);
+    //err = nvs_get_blob(handle, key, NULL, &size);
 
     if (err != ESP_OK)
     {
@@ -57,7 +58,8 @@ esp_err_t nvs_get_string(char *str, char *namespace, char *key)
         return err;
     }
 
-    err = nvs_get_blob(handle, key, (void *)str, &size);
+    err = nvs_get_str(handle, key, (void *)str, &size);
+    // err = nvs_get_blob(handle, key, (void *)str, &size);
 
     if (err != ESP_OK)
     {
@@ -76,7 +78,8 @@ esp_err_t nvs_set_string(char *str, char *namespace, char *key)
     if (err != ESP_OK)
         return err;
 
-    err = nvs_set_blob(handle, key, (void *)str, strlen(str) + 1);
+    err = nvs_set_str(handle, key, (void *)str);
+    //err = nvs_set_blob(handle, key, (void *)str, strlen(str) + 1);
 
     if (err != ESP_OK)
         return err;
