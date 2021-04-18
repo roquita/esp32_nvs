@@ -1,6 +1,0 @@
-* With NVS partition generator get nvs.bin file(iamge)
-* flash nvs image:
-python C:\esp41\esp-idf\components\partition_table\parttool.py --port COM18 write_partition --partition-name=nvs --input "nvs.bin"
-* read nvs image:
-python C:\esp41\esp-idf\components\partition_table\parttool.py read_partition  --partition-name=nvs --output "flashed.bin"
-* from c code, use keys and data types according to your configuration in NVS partition generator.
